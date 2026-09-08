@@ -4,211 +4,269 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Mateo Michel--Raballand</title>
+    <meta name="description" content="Portfolio de Matéo Michel-Raballand, étudiant en 3ème année de BUT Informatique, parcours Développement d'Applications.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Mateo Michel--Raballand</h1>
-        <p>Développeur DIA | Étudiant en Informatique</p>
-    </header>
+    <div class="layout">
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#parcours">Parcours</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <span class="badge">Disponible pour une alternance</span>
+                <h1>Matéo<br>Michel-Raballand</h1>
+                <p class="role">Développeur DIA</p>
+                <p class="pitch">
+                    Étudiant en 3ème année de BUT Informatique. Je conçois des applications web
+                    et des systèmes embarqués avec rigueur et curiosité.
+                </p>
+            </div>
 
-    <!-- Main Container -->
-    <div class="container">
-        
-        <!-- Section À propos -->
-        <section id="apropos">
-            <h2>À propos de moi</h2>
-            <div class="about-content">
-                <div class="about-text">
+            <nav>
+                <ul>
+                    <li><a href="#apropos"><span class="nav-index">01</span>À propos</a></li>
+                    <li><a href="#parcours"><span class="nav-index">02</span>Parcours</a></li>
+                    <li><a href="#competences"><span class="nav-index">03</span>Compétences</a></li>
+                    <li><a href="#projets"><span class="nav-index">04</span>Projets</a></li>
+                    <li><a href="#contact"><span class="nav-index">05</span>Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="social-row">
+                    <a href="http://www.linkedin.com/in/mat%C3%A9o-michel-raballand-2871ab313" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Mateo-MR" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+                <a class="sidebar-email" href="mailto:mateomr2006@gmail.com">mateomr2006@gmail.com</a>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- À propos -->
+            <section id="apropos">
+                <p class="eyebrow">01 — À propos</p>
+                <h2>Qui suis-je&nbsp;?</h2>
+                <div class="prose">
                     <p>
-                        Bonjour ! Je suis <strong>Matéo Michel-Raballand</strong>, étudiant en informatique 
-                        actuellement en 2ème année de BUT Informatique à Niort Tech.
+                        Bonjour&nbsp;! Je suis <strong>Matéo Michel-Raballand</strong>, étudiant en informatique
+                        actuellement en 3ème année de BUT Informatique à Niort Tech.
                     </p>
                     <p>
-                        Très intéressé par le développement et les nouvelles technologies, je me spécialise dans 
-                        le développement DIA avec une forte appétence pour la création d'applications web modernes 
+                        Très intéressé par le développement et les nouvelles technologies, je me spécialise dans
+                        le développement DIA avec une forte appétence pour la création d'applications web modernes
                         et performantes.
                     </p>
                     <p>
-                        Actuellement à la recherche d'un stage pour mettre en pratique mes compétences et continuer 
-                        à apprendre au sein d'une équipe professionnelle, je suis motivé par les projets innovants 
+                        Actuellement à la recherche d'une alternance pour mettre en pratique mes compétences et continuer
+                        à apprendre au sein d'une équipe professionnelle, je suis motivé par les projets innovants
                         et les défis techniques qui me permettent de progresser dans mon domaine.
                     </p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Section Parcours -->
-        <section id="parcours">
-            <h2>Parcours</h2>
-            
-            <h3 style="color: #71bef1; margin-top: 2rem; margin-bottom: 1rem;">🎓 Formations & Diplômes</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>BUT Informatique (2ème année)</h3>
-                    <div class="date">2025 - 2026</div>
-                    <div class="location">IUT La Rochelle a Niort Tech</div>
-                </div>
-                <div class="timeline-item">
-                    <h3>BUT Informatique (1ère année)</h3>
-                    <div class="date">2024 - 2025</div>
-                    <div class="location">IUT La Rochelle</div>
-                </div>
-                <div class="timeline-item">
-                    <h3>Baccalauréat STI2D</h3>
-                    <div class="date">2021-2024</div>
-                    <div class="location">Lycée Saint François d'Assise</div>
-                    <p>
-                        Baccalauréat technologique option SIN (Systèmes d'Information et Numérique).<br>
-                        BIMD (Brevet d'Initiation aux Métiers du Drone).<br>
-                        TOEIC niveau B2.
-                    </p>
-                </div>
-            </div>
+            <!-- Parcours -->
+            <section id="parcours">
+                <p class="eyebrow">02 — Parcours</p>
+                <h2>Mon parcours</h2>
 
-            <h3 style="color: #65abda; margin-top: 3rem; margin-bottom: 1rem;">💼 Expériences Professionnelles</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Préparateur de commande</h3>
-                    <div class="date">Juillet/Août - 2025</div>
-                    <div class="location">NOOS</div>
-                    <p>
-                        Ce job d'été m'a permis de découvrir la culture d'entreprise et de travailler en équipe. J'avais déjà travaillé dans d'autres entreprises mais elles étaient plus petites et donc l'esprit d'équipe était plus présent.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section Projets -->
-        <section id="projets">
-            <h2>Mes Projets</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Projet1.jpg" alt="BuzzBot">
-                    </div>
-                    <div class="project-content">
-                        <h3>BuzzBot</h3>
-                        <p>Programmation d'un robot pour qu'il soit contrôlable afin de suivre un chemin aléatoire et arriver dans sa station.</p>
-                        <div class="project-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">Arduino</span>
-                            <span class="tag">Programmation Embarquée</span>
+                <div class="timeline-group">
+                    <p class="group-label">Formations &amp; diplômes</p>
+                    <div class="timeline-list">
+                        <div class="timeline-entry is-current">
+                            <div class="entry-date">2026 — 2027</div>
+                            <div class="entry-body">
+                                <h3>BUT Informatique <span>· 3ème année</span></h3>
+                                <p class="entry-loc">IUT La Rochelle à Niort Tech</p>
+                            </div>
+                        </div>
+                        <div class="timeline-entry">
+                            <div class="entry-date">2025 — 2026</div>
+                            <div class="entry-body">
+                                <h3>BUT Informatique <span>· 2ème année</span></h3>
+                                <p class="entry-loc">IUT La Rochelle à Niort Tech</p>
+                            </div>
+                        </div>
+                        <div class="timeline-entry">
+                            <div class="entry-date">2024 — 2025</div>
+                            <div class="entry-body">
+                                <h3>BUT Informatique <span>· 1ère année</span></h3>
+                                <p class="entry-loc">IUT La Rochelle</p>
+                            </div>
+                        </div>
+                        <div class="timeline-entry">
+                            <div class="entry-date">2021 — 2024</div>
+                            <div class="entry-body">
+                                <h3>Baccalauréat STI2D</h3>
+                                <p class="entry-loc">Lycée Saint François d'Assise</p>
+                                <p class="entry-detail">
+                                    Option SIN (Systèmes d'Information et Numérique) · BIMD (Brevet d'Initiation
+                                    aux Métiers du Drone) · TOEIC niveau B2.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Projet2.png" alt="Serveur WEB">
-                    </div>
-                    <div class="project-content">
-                        <h3>Serveur WEB</h3>
-                        <p>Création d'un serveur web hébergé sur une carte Raspberry Pi. Mise en place de la sécurité et gestion des utilisateurs.</p>
-                        <div class="project-tags">
-                            <span class="tag">Bash</span>
-                            <span class="tag">SSH</span>
-                            <span class="tag">Serveur</span>
+                <div class="timeline-group">
+                    <p class="group-label">Expériences professionnelles</p>
+                    <div class="timeline-list">
+                        <div class="timeline-entry">
+                            <div class="entry-date">Été 2025</div>
+                            <div class="entry-body">
+                                <h3>Préparateur de commande <span>· NOOS</span></h3>
+                                <p class="entry-detail">
+                                    Ce job d'été m'a permis de découvrir la culture d'entreprise et de travailler
+                                    en équipe dans une structure plus grande que mes précédentes expériences.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Projet3.jpg" alt="StarFrogger">
+            <!-- Compétences -->
+            <section id="competences">
+                <p class="eyebrow">03 — Compétences</p>
+                <h2>Ce que je maîtrise</h2>
+
+                <div class="skills-groups">
+                    <div class="skill-group">
+                        <h3>Langages &amp; programmation</h3>
+                        <div class="chip-row">
+                            <span class="chip">C++</span>
+                            <span class="chip">SQL</span>
+                            <span class="chip">Bash / Shell</span>
+                            <span class="chip">HTML / CSS</span>
+                        </div>
                     </div>
-                    <div class="project-content">
-                        <h3>StarFrogger</h3>
-                        <p>Création d'un jeu qui mélange l'univers de Star Wars et la façon de jouer de Frogger.</p>
-                        <div class="project-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">Git</span>
-                            <span class="tag">Jeux</span>
+                    <div class="skill-group">
+                        <h3>Outils &amp; technologies</h3>
+                        <div class="chip-row">
+                            <span class="chip">Git</span>
+                            <span class="chip">Linux / SSH</span>
+                            <span class="chip">Oracle</span>
+                            <span class="chip">Arduino</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Savoir-être</h3>
+                        <div class="chip-row">
+                            <span class="chip">Travail d'équipe</span>
+                            <span class="chip">Autonomie</span>
+                            <span class="chip">Résolution de problèmes</span>
+                            <span class="chip">Curiosité technique</span>
+                            <span class="chip">Rigueur</span>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Projet4.jpg" alt="Base de données">
-                    </div>
-                    <div class="project-content">
-                        <h3>Base de données</h3>
-                        <p>Création d'une base de données pour stocker et gérer les données du port de La Rochelle.</p>
-                        <div class="project-tags">
-                            <span class="tag">SQL</span>
-                            <span class="tag">Oracle</span>
-                            <span class="tag">BD</span>
+            <!-- Projets -->
+            <section id="projets">
+                <p class="eyebrow">04 — Projets</p>
+                <h2>Projets récents</h2>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/Projet1.jpg" alt="BuzzBot" loading="lazy">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <div class="project-content">
+                            <h3>BuzzBot</h3>
+                            <p>Programmation d'un robot pour qu'il soit contrôlable afin de suivre un chemin aléatoire et arriver dans sa station.</p>
+                            <div class="project-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">Arduino</span>
+                                <span class="tag">Programmation embarquée</span>
+                            </div>
+                        </div>
+                    </article>
 
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/Projet2.png" alt="Serveur WEB" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Serveur WEB</h3>
+                            <p>Création d'un serveur web hébergé sur une carte Raspberry Pi. Mise en place de la sécurité et gestion des utilisateurs.</p>
+                            <div class="project-tags">
+                                <span class="tag">Bash</span>
+                                <span class="tag">SSH</span>
+                                <span class="tag">Serveur</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/Projet3.jpg" alt="StarFrogger" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>StarFrogger</h3>
+                            <p>Création d'un jeu qui mélange l'univers de Star Wars et la façon de jouer de Frogger.</p>
+                            <div class="project-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">Git</span>
+                                <span class="tag">Jeux</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/Projet4.jpg" alt="Base de données" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Base de données</h3>
+                            <p>Création d'une base de données pour stocker et gérer les données du port de La Rochelle.</p>
+                            <div class="project-tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">Oracle</span>
+                                <span class="tag">BD</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="contact-section">
+                <p class="eyebrow">05 — Contact</p>
+                <h2>Discutons de votre projet</h2>
+                <p class="contact-lead">
+                    Je recherche actuellement une alternance pour mettre en pratique mes compétences.
+                    N'hésitez pas à me contacter, je réponds rapidement.
+                </p>
+                <a class="contact-big" href="mailto:mateomr2006@gmail.com">
+                    mateomr2006@gmail.com
+                    <span class="arrow">↗</span>
+                </a>
+                <div class="contact-meta">
+                    <a href="tel:+33672679577">+33 6 72 67 95 77</a>
+                    <span>Nesmy, France</span>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Matéo Michel-Raballand.</p>
+            </footer>
+
+        </main>
     </div>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Matéo Michel-Raballand</h3>
-                    <p>Développeur DIA | Étudiant en Informatique</p>
-                    <p class="footer-tagline">À la recherche d'un stage pour développer mes compétences</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <div class="footer-links">
-                        <a href="mailto:mateomr2006@gmail.com">
-                            <span class="icon">📧</span>
-                            mateomr2006@gmail.com
-                        </a>
-                        <a href="tel:+33672679577">
-                            <span class="icon">📱</span>
-                            +33 6 72 67 95 77
-                        </a>
-                        <p>
-                            <span class="icon">📍</span>
-                            Nesmy, France
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Réseaux</h4>
-                    <div class="social-icons">
-                        <a href="http://www.linkedin.com/in/mat%C3%A9o-michel-raballand-2871ab313" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/Mateo-MR" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Matéo Michel-Raballand. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
